@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: tax-counter
+    env: java
+    buildcommand: ./mvn clean install
+    startcommand: java -jar target/*.jar
+    regions: oregon
